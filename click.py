@@ -4,7 +4,7 @@ isRunning = True
 pyautogui.PAUSE = 0   
 pyautogui.FAILSAFE = True
 
-target_colors = {(119, 216, 119), (71, 133, 203)}
+target_colors = {(75, 219, 1096), (43, 135, 209)}
 
 while(isRunning):
     position = pyautogui.position()
