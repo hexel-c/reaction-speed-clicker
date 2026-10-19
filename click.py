@@ -1,17 +1,18 @@
 import pyautogui
 
 isRunning = True 
+pyautogui.PAUSE = 0   
+pyautogui.FAILSAFE = True
+
+target_colors = {(119, 216, 119), (71, 133, 203)}
 
 while(isRunning):
-    pyautogui.FAILSAFE = True
     position = pyautogui.position()
     x, y = position.x, position.y
     color = pyautogui.pixel(x,y)
-    print(f"X: {x}, Y {y}, RGB: {color}")
-    print(position)
 
-    if (color == (119, 216, 119)):
+    if (color in target_colors):
         pyautogui.click()
 
-    if (color == (71, 133, 203)):
-            pyautogui.click()
+
+    
