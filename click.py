@@ -10,8 +10,8 @@ while(isRunning):
     print(f"X: {x}, Y {y}, RGB: {color}")
     print(position)
 
-    if (color == (119, 216, 119)):
+    if (color == (75, 219, 106)):
         pyautogui.click()
 
-    if (color == (71, 133, 203)):
+    if (color == (43, 135, 209)):
             pyautogui.click()
